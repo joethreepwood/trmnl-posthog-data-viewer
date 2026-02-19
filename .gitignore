@@ -1,0 +1,25 @@
+# Environment variables — never commit secrets
+.env
+
+# SQLite database (contains user access tokens)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+data.sqlite
+
+# Node dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Generated preview
+preview.html
+
+# Logs
+*.log
+npm-debug.log*
+
+# Stray copies
+trmnl-ph-insight-viewer/
+trmnl-posthog-insight-viewer/
