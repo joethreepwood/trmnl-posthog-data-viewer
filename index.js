@@ -402,7 +402,7 @@ app.get('/health', (_req, res) => res.json({ status: 'ok' }));
 // ---------------------------------------------------------------------------
 // Start server
 // ---------------------------------------------------------------------------
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`TRMNL PostHog plugin running on http://localhost:${PORT}`);
   if (!TRMNL_CLIENT_ID || !TRMNL_CLIENT_SECRET) {
     console.warn('WARNING: TRMNL_CLIENT_ID or TRMNL_CLIENT_SECRET not set in .env');
