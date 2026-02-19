@@ -36,7 +36,7 @@ async function fetchInsight(shareUrl) {
       // Do NOT send an Accept header — PostHog returns 406 if it doesn't
       // recognise the value. Omitting it lets the server default to text/html.
       'User-Agent':
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (compatible; TRMNL-PostHog-Plugin/1.0)',
     },
   });
 

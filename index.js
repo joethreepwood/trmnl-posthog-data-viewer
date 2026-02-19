@@ -238,7 +238,7 @@ app.post('/settings', (req, res) => {
   }
 
   db.setPosthogUrl(plugin_setting_id, posthog_url.trim());
-  console.log(`Settings saved: plugin_setting_id=${plugin_setting_id} url=${posthog_url}`);
+  console.log(`Settings saved: plugin_setting_id=${plugin_setting_id}`);
 
   // Redirect back to the settings form with a confirmation
   res.redirect(`/settings?plugin_setting_id=${encodeURIComponent(plugin_setting_id)}&saved=1`);
